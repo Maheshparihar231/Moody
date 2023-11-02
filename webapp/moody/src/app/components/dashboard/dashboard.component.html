@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/dashboard">MOODY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a routerLink="/dashboard" class="hover-button">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/dashboard/all" class="hover-button">All files</a>
+                </li>
+            </ul>
+            <!-- <button class="button-62" role="button" routerLink="/authentication" ><img src="../../../assets/default-profile-img.jpg"/></button> -->
+            <button mat-button [matMenuTriggerFor]="menu"><mat-icon>settings</mat-icon></button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/dashboard/account">Your account</button>
+                <button mat-menu-item>Recycle bin</button>
+                <button mat-menu-item [matMenuTriggerFor]="theme" xPosition="before">Appearance</button>
+                <button mat-menu-item>Language</button>
+                <button mat-menu-item>My Plans</button>
+                <button mat-menu-item routerLink="/support/feedback">Help And Support</button>
+                <button mat-menu-item>Sign out</button>
+            </mat-menu>
+            <mat-menu #theme="matMenu">
+                <button mat-menu-item>Dark</button>
+                <button mat-menu-item>Light</button>
+                <button mat-menu-item>Device theme</button>
+            </mat-menu>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

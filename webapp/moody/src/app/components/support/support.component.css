@@ -1,0 +1,37 @@
+/* Add custom CSS for styling */
+.nav-tabs {
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.nav-link {
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    transition: 0.3s ease-out;
+}
+
+.nav-link.active {
+    background-color: #5e7eb6;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    border-radius: 10px;
+}
+
+ul{
+    gap: 20px;
+}
+
+.tabs{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,101 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Define the initial styles for the button */
+.hover-button {
+    color: #070707;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none; /* Initial text decoration */
+}
+
+/* Define styles for the button when hovered */
+.hover-button:hover {
+    color: #5e7eb6;
+    text-decoration: none; /* Remove text decoration on hover */
+}
+
+button:hover{
+    color: #5e7eb6;
+}
+
+/* CSS */
+.button-62 {
+  background: #5e7eb6;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #5e7eb6, .125rem .125rem 1rem #5e7eb6;          
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #5e7eb6, .125rem .125rem 1rem #5e7eb6;
+}
+
+.button-container {
+    position: relative;
+}
+
+.image-label {
+    display: block;
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+    cursor: pointer;
+}
+
+.image-label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+#menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#menu-list li:last-child {
+    border-bottom: none;
+}
+
+#image-button:checked + .image-label + #menu-list {
+    display: block;
+}
