@@ -12,11 +12,6 @@
         <module name="Authentication" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Authentication" target="17" />
-      <module name="upload-service" target="17" />
-      <module name="user" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
